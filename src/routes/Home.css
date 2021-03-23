@@ -1,0 +1,15 @@
+.about_container{
+    box-shadow: 0 12px 24px rgba(50,50,93,0.3);
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-weight: 400;
+}
+.about_container span:first-child{
+    font-size: 18px;
+}
+.about_container span:last-child{
+    font-size: 24px;
+}

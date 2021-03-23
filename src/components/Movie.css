@@ -1,0 +1,38 @@
+.movies .movie {
+    background-color: #fff;
+    font-weight: 300;
+    color: #adaeb9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.3);
+    margin-bottom: 70px;
+}
+/* 플렉스 2단 레이아웃 */
+.movies {
+    display: flex;
+    flex-flow: row wrap;
+}
+.movies .movie {
+    width: 48%;
+    margin: 24px 1%;
+}
+.movies .movie_title{
+    color: #2c2c2c;
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+.movies .movie_year{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(31,25,25);
+}
+/* li 한줄로 레이아웃 */
+.movie_genre{
+    list-style: none;
+    display: inline-block;
+    margin-right: 16px;
+    padding: 0;
+
+    
+}
