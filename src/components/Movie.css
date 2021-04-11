@@ -1,7 +1,7 @@
 .movies .movie {
     background-color: #fff;
     font-weight: 300;
-    color: #adaeb9;
+    /* color: #adaeb9; */
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 13px 27px -5px rgba(50,50,93,0.3);
@@ -19,17 +19,25 @@
     margin: 24px 5%;
     width: 40%;
     text-align: center;
+    
 }
 .movies .movie_title{
     color: #000;
     font-size: 25px;
     margin-bottom: 4px;
     font-weight: bold;
+   
+    list-style: none;
+    display: inline-block;
+    
 }
 .movies .movie_year{
+    list-style: none;
+    display: inline-block;
     font-size: 18px;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: rgb(31,25,25);
+   
 }
 /* li 한줄로 레이아웃 */
 .movie_genre{
@@ -40,8 +48,14 @@
 }
 .movie_rating{
     color: orangered;
+    list-style: none;
+    display: inline-block;
 }
 ul{
     margin: 0;
     padding: 0;
+}
+.movie_summary{
+    list-style: none;
+    display: inline-block;
 }
