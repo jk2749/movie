@@ -45,6 +45,7 @@
     display: inline-block;
     margin-right: 16px;
     font-weight: 500;
+    color: #000;
 }
 .movie_rating{
     color: orangered;
@@ -58,4 +59,5 @@ ul{
 .movie_summary{
     list-style: none;
     display: inline-block;
+    color: #000;
 }
