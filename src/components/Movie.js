@@ -9,19 +9,20 @@ function Movie({year, title, summary, poster ,rating ,genres}){
             {/* 최종2.객체를 전달 : <Link to={{pathname:'URL', state:{'route props에 보내줄 데이터'},}} */}
             {/* 영화상세페이지 사용을 위한 Link 컴포넌트 사용 | state 는 route props에 보내줄 데이터  */}
 
-            <Link to={{pathname: "/movie-detail",state: {year, title, poster, genres},}}>
+            <Link to={{pathname: "/movie-detail",state: {year, title, poster, genres, summary},}}>
                 <img src = {poster} alt={title} title = {title} />
                 <div className="movie_data">
-                    <h3 className="movie_year">{year}</h3>
                     <h4 className="movie_title">{title}</h4>
-                    {/* 최종, 시놉시스 180자로 제한 = slice(배열시작인덱스,배열끝인덱스앞까지) */}
-                    <p className="movie_summary">{summary.slice(0,180)}...</p>
-                    <p className="movie_rating">{rating}/10</p>
+                    <h3 className="movie_year">{year}</h3>
                     <ul>
-                        { genres.map((genre,index)=>{
+                        {genres.map((genre,index)=>{
                             return <li className="movie_genre" key={index}>{genre}</li>
                         }) }
                     </ul>
+                    {/* 최종, 시놉시스 180자로 제한 = slice(배열시작인덱스,배열끝인덱스앞까지) */}
+                    <p className="movie_summary">{summary.slice(0,100)}...</p>
+                    <p className="movie_rating">{rating} /10</p>
+                    
                 </div>
             </Link>
         </div>

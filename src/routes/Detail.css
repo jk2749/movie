@@ -1,0 +1,23 @@
+.box{
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+    border: 3px solid #000;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-top: 10px;
+}
+.poster img{
+    margin-top: 40px;
+    width: 50%;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.summary{
+    margin-top: 20px;
+}

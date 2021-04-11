@@ -16,12 +16,18 @@ class Detail extends Component {
         const { location } =this.props;
         // return(<>{location.state?('aaa'):('bbb')}</>);
         return (
-            <div>{ location.state ? (
+            <div className="box">{ location.state ? (
                 <ul>
-                    <li><img src={ location.state.poster } alt={ location.state.title }/></li>
-                    <li>{ location.state.title }</li>
+                    <li className="poster"><img src={ location.state.poster } alt={ location.state.title }/></li>
+                    <li className="title">{ location.state.title }</li>
                     <li>{ location.state.year }</li>
-                    <li>{ location.state.genres }</li>
+                    {/* <li className="genres">{ location.state.genres }</li> */}
+                    <ul>
+                        {location.state.genres.map((genre,index)=>{
+                            return <li className="movie_genre" key={index}>{genre}</li>
+                        }) }
+                    </ul>
+                    <li className="summary">{ location.state.summary }</li>
                 </ul>
             ) : (null)}
             </div>

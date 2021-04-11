@@ -1,18 +1,18 @@
 .nav{
     position: fixed;
     top:32px;
-    right: 10px;
+    left: 10px;
     z-index: 999;
     padding: 10px 20px;
-    box-shadow: 0 12px 28px rgba(50,50,93,0.4);
-    border-radius: 4px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
+    /* box-shadow: 0 12px 28px rgba(50,50,93,0.4); */
+    /* border-radius: 4px; */
+    /* background-color: #fff; */
+    /* display: flex;
+    flex-direction: column; */
 }
 .nav a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
     font-weight: 600;
     color: #193386;

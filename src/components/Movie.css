@@ -11,16 +11,20 @@
 .movies {
     display: flex;
     flex-flow: row wrap;
+    margin-top: 100px;
+    width: 80%;
+    margin: 0 auto;
 }
 .movies .movie {
-    width: 48%;
-    margin: 24px 1%;
+    margin: 24px 5%;
+    width: 40%;
+    text-align: center;
 }
 .movies .movie_title{
-    color: #2c2c2c;
-    font-size: 24px;
+    color: #000;
+    font-size: 25px;
     margin-bottom: 4px;
-    font-weight: 400;
+    font-weight: bold;
 }
 .movies .movie_year{
     font-size: 18px;
@@ -32,7 +36,12 @@
     list-style: none;
     display: inline-block;
     margin-right: 16px;
+    font-weight: 500;
+}
+.movie_rating{
+    color: orangered;
+}
+ul{
+    margin: 0;
     padding: 0;
-
-    
 }
